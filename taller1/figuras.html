@@ -7,7 +7,54 @@
     <title>Figuras Geometricas</title>
   </head>
   <body>
-    <h1>Taller 1: Figuras Geometricas</h1>
+    <header>
+      <h1>Figuras Geometricas</h1>
+      <h2>Taller 1 del curso practico de Javascript</h2>
+    </header>
+    <main class="main-content">
+      <section>
+        <h3>Calcula el area y perimetro de un cuadrado:</h3>
+        <form action="">
+          <label for="lado_cuadrado">Lado:</label>
+          <input id="lado_cuadrado" name="lado_cuadrado" type="number" />
+          <button onclick="perimetroCuadrado()">Perimetro</button>
+          <button onclick="areaCuadrado()">Area</button>
+        </form>
+      </section>
+      <section>
+        <h3>Calcula el area y perimetro de un triangulo:</h3>
+        <form action="">
+          <div>
+            <label for="lado1_triangulo">Lado1:</label>
+            <input id="lado1_triangulo" name="lado1_triangulo" type="number" />
+
+            <label for="lado2_triangulo">Lado2:</label>
+            <input id="lado2_triangulo" name="lado2_triangulo" type="number" />
+
+            <label for="lado3_triangulo">Lado3:</label>
+            <input id="lado3_triangulo" name="lado3_triangulo" type="number" />
+
+            <label for="altura_triangulo">Altura:</label>
+            <input
+              id="altura_triangulo"
+              name="altura_triangulo"
+              type="number"
+            />
+          </div>
+          <button onclick="perimetroTriangulo()">Perimetro</button>
+          <button onclick="areaTriangulo()">Area</button>
+        </form>
+      </section>
+      <section>
+        <h3>Calcula el area y perimetro de un circulo:</h3>
+        <form action="">
+          <label for="radio">Radio:</label>
+          <input id="radio" name="radio" type="number" />
+          <button onclick="perimetroCirculo()">Perimetro</button>
+          <button onclick="areaCirculo()">Area</button>
+        </form>
+      </section>
+    </main>
     <script src="./figuras.js"></script>
   </body>
 </html>
