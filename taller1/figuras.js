@@ -62,7 +62,6 @@ a_circulo = radio * radio * PI;
 console.log("El area del circulo es igual a " + Math.round(a_circulo) + " cm2");
 console.groupEnd();
 
-console.group("Funciones");
 // Funciones
 function perimetroCuadrado() {
   const lado = document.getElementById("lado_cuadrado").value;
@@ -105,4 +104,29 @@ function areaCirculo() {
   a_circulo = parseInt(radio) * parseInt(radio) * PI;
   alert("El area del circulo es igual a " + Math.round(a_circulo) + " cm2");
 }
-console.groupEnd();
+
+function perimetroTrianguloIsosceles() {
+  const lado1 = document.getElementById("lado1_isosceles").value;
+  const lado2 = document.getElementById("lado2_isosceles").value;
+  const lado3 = document.getElementById("lado3_isosceles").value;
+  if (lado1 != lado2) {
+    alert("Error, los dos lados no son iguales.");
+  } else {
+    p_triangulo = parseInt(lado1) + parseInt(lado2) + parseInt(lado3);
+    alert("El perimetro del triangulo es igual a " + p_triangulo + "cm");
+  }
+}
+
+function alturaTrianguloIsosceles() {
+  const lado1 = document.getElementById("lado1_isosceles").value;
+  const lado2 = document.getElementById("lado2_isosceles").value;
+  const lado3 = document.getElementById("lado3_isosceles").value;
+  if (lado1 != lado2) {
+    alert("Error, los dos lados no son iguales.");
+  } else {
+    h_triangulo = Math.sqrt(
+      parseInt(lado1) - (parseInt(lado3) * parseInt(lado3)) / 4
+    );
+    alert("La altura del triangulo es igual a " + h_triangulo + "cm");
+  }
+}
